@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FreshMart - Fresh. Healthy. Everyday.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span><img src="images/tb-loc.png" alt="">789 Organic Street, Greenfield, NY 10001</span>
+    <span><img src="images/tb-truck.png" alt="">Free Delivery on orders over $49</span>
+    <span><img src="images/tb-phone.png" alt="">(123) 456-7890</span>
+    <span><img src="images/tb-clock.png" alt="">Mon - Sun: 8:00 AM - 10:00 PM</span>
+    <span><img class="tb-social" src="images/tb-social.png" alt="Social"></span>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container header-inner">
+    <a href="#home" class="logo">
+      <img class="logo-icon" src="images/logo.png" alt="">
+      <span class="logo-text"><b>FreshMart</b><small>Fresh. Healthy. Everyday.</small></span>
+    </a>
+    <form class="search" onsubmit="return false">
+      <input type="text" placeholder="Search for fresh fruits, vegetables, dairy and more...">
+      <select><option>All Categories</option></select>
+      <button type="submit" aria-label="Search">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg>
+      </button>
+    </form>
+    <a href="#contact" class="account">
+      <img src="images/acc.png" alt="">
+      <div><small>Sign In / Register</small><b>My Account</b></div>
+    </a>
+    <a href="#deals" class="cart">
+      <span class="cart-icon"><img src="images/cart.png" alt=""><i>3</i></span>
+      <div><small>My Cart</small><b>$24.99</b></div>
+    </a>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="#categories" class="cat-btn"><span class="burger">&#9776;</span>Shop by Categories</a>
+    <ul>
+      <li class="active"><a href="#home">Home</a></li>
+      <li><a href="#categories">Categories <span class="chev">&#8964;</span></a></li>
+      <li><a href="#deals">Deals</a></li>
+      <li><a href="#new-arrivals">New Arrivals</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#recipes">Recipes</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <a href="#deals" class="flash"><span class="bolt">&#9889;&#xFE0E;</span> FLASH DEALS</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <div class="tag"><img src="images/leaf.png" alt="">FRESHNESS YOU CAN TRUST</div>
+      <h1>Fresh Groceries,<br><span>Better Living</span></h1>
+      <p>Bring home the freshest fruits, vegetables and daily essentials<br>for a healthier and happier life.</p>
+      <div class="hero-btns">
+        <a href="#categories" class="btn btn-green">Shop Now <span>&rarr;</span></a>
+        <a href="#deals" class="btn btn-outline">Explore Deals</a>
+      </div>
+      <div class="hero-features">
+        <div><img src="images/hf1.png" alt=""><p><b>Farm Fresh</b><small>Quality Produce</small></p></div>
+        <div><img src="images/hf2.png" alt=""><p><b>Free Delivery</b><small>On orders over $49</small></p></div>
+        <div><img src="images/hf3.png" alt=""><p><b>Secure Payment</b><small>100% Protected</small></p></div>
+        <div><img src="images/hf4.png" alt=""><p><b>Easy Returns</b><small>7 Days Return</small></p></div>
+      </div>
+    </div>
+  </div>
+  <img class="hero-basket" src="images/hero-basket.png" alt="Fresh groceries basket">
+  <div class="badge-30"><small>UP TO</small><b>30%</b><small>OFF</small></div>
+</section>
+
+<!-- SHOP BY CATEGORY -->
+<section class="container" id="categories">
+  <div class="panel cat-panel">
+    <div class="section-head">
+      <h2><img src="images/leaf.png" alt="">Shop by Category</h2>
+      <a href="#categories">View All <span>&rarr;</span></a>
+    </div>
+    <div class="cat-grid">
+      <a href="#deals" class="cat-card" data-cat="fruits-vegetables"><img src="images/cat1.png" alt=""><p>Fruits &amp;<br>Vegetables</p></a>
+      <a href="#deals" class="cat-card" data-cat="dairy-eggs"><img src="images/cat2.png" alt=""><p>Dairy &amp;<br>Eggs</p></a>
+      <a href="#deals" class="cat-card" data-cat="snacks-munchies"><img src="images/cat3.png" alt=""><p>Snacks &amp;<br>Munchies</p></a>
+      <a href="#deals" class="cat-card" data-cat="beverages"><img src="images/cat4.png" alt=""><p>Beverages</p></a>
+      <a href="#deals" class="cat-card" data-cat="breakfast-cereals"><img src="images/cat5.png" alt=""><p>Breakfast &amp;<br>Cereals</p></a>
+      <a href="#deals" class="cat-card" data-cat="bakery-bread"><img src="images/cat6.png" alt=""><p>Bakery &amp;<br>Bread</p></a>
+      <a href="#deals" class="cat-card" data-cat="household-essentials"><img src="images/cat7.png" alt=""><p>Household<br>Essentials</p></a>
+      <a href="#deals" class="cat-card" data-cat="personal-care-beauty"><img src="images/cat8.png" alt=""><p>Personal Care<br>&amp; Beauty</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO BANNERS -->
+<section class="container promo-row">
+  <div class="promo-dark">
+    <img class="promo-img" src="images/promo-veg.png" alt="">
+    <div class="promo-text">
+      <h3>Weekend<br><span>Super Saver</span></h3>
+      <p>Grab up to 30% off on selected<br>organic products. Hurry! Offer valid<br>this weekend only.</p>
+      <a href="#deals" class="btn btn-yellow">Shop Now <span>&rarr;</span></a>
+    </div>
+  </div>
+  <div class="promo-light">
+    <img class="promo-img" src="images/promo-scooter.png" alt="">
+    <div class="promo-text">
+      <h3>Get Delivery in<br><span>30 Minutes!</span></h3>
+      <p>Fast &amp; fresh delivery<br>at your doorstep</p>
+      <a href="#contact" class="btn btn-green">Order Now <span>&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- DEAL OF THE DAY -->
+<section class="container" id="deals">
+  <div class="section-head deal-head">
+    <h2><img src="images/fire.png" alt="">Deal of the Day</h2>
+    <a href="#deals">View All Deals <span>&rarr;</span></a>
+  </div>
+  <div class="deal-grid">
+    <div class="deal-card"><span class="off">20%<br>OFF</span><div class="pic"><img src="images/deal1.png" alt=""></div><h4>Fresh Red Apples</h4><small>1 kg</small><p class="price">$2.39 <s>$2.99</s></p><button><span>Add to Cart</span><img src="images/addcart.png" alt=""></button></div>
+    <div class="deal-card"><span class="off">15%<br>OFF</span><div class="pic"><img src="images/deal2.png" alt=""></div><h4>Organic Bananas</h4><small>1 kg</small><p class="price">$1.69 <s>$1.99</s></p><button><span>Add to Cart</span><img src="images/addcart.png" alt=""></button></div>
+    <div class="deal-card"><span class="off">25%<br>OFF</span><div class="pic"><img src="images/deal3.png" alt=""></div><h4>Farm Fresh Milk</h4><small>1 Ltr</small><p class="price">$1.49 <s>$1.99</s></p><button><span>Add to Cart</span><img src="images/addcart.png" alt=""></button></div>
+    <div class="deal-card"><span class="off">20%<br>OFF</span><div class="pic"><img src="images/deal4.png" alt=""></div><h4>White Eggs</h4><small>12 pcs</small><p class="price">$1.99 <s>$2.49</s></p><button><span>Add to Cart</span><img src="images/addcart.png" alt=""></button></div>
+    <div class="deal-card"><span class="off">10%<br>OFF</span><div class="pic"><img src="images/deal5.png" alt=""></div><h4>Basmati Rice</h4><small>5 kg</small><p class="price">$9.09 <s>$9.99</s></p><button><span>Add to Cart</span><img src="images/addcart.png" alt=""></button></div>
+    <div class="deal-card"><span class="off">15%<br>OFF</span><div class="pic"><img src="images/deal6.png" alt=""></div><h4>Almonds</h4><small>250 g</small><p class="price">$3.39 <s>$3.99</s></p><button><span>Add to Cart</span><img src="images/addcart.png" alt=""></button></div>
+    <div class="deal-card"><span class="off">15%<br>OFF</span><div class="pic"><img src="images/cat1.png" alt="Fresh Vegetable Basket"></div><h4>Fresh Vegetable Basket</h4><small>1 basket</small><p class="price">$4.49 <s>$5.29</s></p><button><span>Add to Cart</span><img src="images/addcart.png" alt=""></button></div>
+    <div class="deal-card"><span class="off">20%<br>OFF</span><div class="pic"><img src="images/cat2.png" alt="Milk &amp; Juice Combo"></div><h4>Milk &amp; Juice Combo</h4><small>1 Ltr + 1 Ltr</small><p class="price">$3.19 <s>$3.99</s></p><button><span>Add to Cart</span><img src="images/addcart.png" alt=""></button></div>
+    <div class="deal-card"><span class="off">20%<br>OFF</span><div class="pic"><img src="images/cat3.png" alt="Crispy Snack Combo"></div><h4>Crispy Snack Combo</h4><small>4 packs</small><p class="price">$2.79 <s>$3.49</s></p><button><span>Add to Cart</span><img src="images/addcart.png" alt=""></button></div>
+    <div class="deal-card"><span class="off">15%<br>OFF</span><div class="pic"><img src="images/cat4.png" alt="Assorted Soft Drinks"></div><h4>Assorted Soft Drinks</h4><small>6 bottles</small><p class="price">$4.99 <s>$5.99</s></p><button><span>Add to Cart</span><img src="images/addcart.png" alt=""></button></div>
+    <div class="deal-card"><span class="off">10%<br>OFF</span><div class="pic"><img src="images/cat5.png" alt="Breakfast Cereal Pack"></div><h4>Breakfast Cereal Pack</h4><small>500 g</small><p class="price">$3.59 <s>$3.99</s></p><button><span>Add to Cart</span><img src="images/addcart.png" alt=""></button></div>
+    <div class="deal-card"><span class="off">25%<br>OFF</span><div class="pic"><img src="images/cat6.png" alt="Whole Grain Bread Basket"></div><h4>Whole Grain Bread Basket</h4><small>6 pcs</small><p class="price">$2.89 <s>$3.99</s></p><button><span>Add to Cart</span><img src="images/addcart.png" alt=""></button></div>
+  </div>
+</section>
+
+<!-- NEW ARRIVALS -->
+<section class="container" id="new-arrivals">
+  <div class="section-head deal-head">
+    <h2><img src="images/leaf.png" alt="">New Arrivals</h2>
+    <a href="#categories">Shop All <span>&rarr;</span></a>
+  </div>
+  <div class="deal-grid">
+    <div class="deal-card"><span class="off new">NEW</span><div class="pic"><img src="images/cat7.png" alt="Household Cleaning Set"></div><h4>Household Cleaning Set</h4><small>3 items</small><p class="price">$7.99</p><button><span>Add to Cart</span><img src="images/addcart.png" alt=""></button></div>
+    <div class="deal-card"><span class="off new">NEW</span><div class="pic"><img src="images/cat8.png" alt="Personal Care Kit"></div><h4>Personal Care Kit</h4><small>5 items</small><p class="price">$11.49</p><button><span>Add to Cart</span><img src="images/addcart.png" alt=""></button></div>
+    <div class="deal-card"><span class="off new">NEW</span><div class="pic"><img src="images/deal2.png" alt="Premium Ripe Bananas"></div><h4>Premium Ripe Bananas</h4><small>1 kg</small><p class="price">$1.89</p><button><span>Add to Cart</span><img src="images/addcart.png" alt=""></button></div>
+    <div class="deal-card"><span class="off new">NEW</span><div class="pic"><img src="images/deal4.png" alt="Farm Brown Eggs"></div><h4>Farm Brown Eggs</h4><small>12 pcs</small><p class="price">$2.29</p><button><span>Add to Cart</span><img src="images/addcart.png" alt=""></button></div>
+    <div class="deal-card"><span class="off new">NEW</span><div class="pic"><img src="images/deal3.png" alt="Family Pack Fresh Milk"></div><h4>Family Pack Fresh Milk</h4><small>2 Ltr</small><p class="price">$2.69</p><button><span>Add to Cart</span><img src="images/addcart.png" alt=""></button></div>
+    <div class="deal-card"><span class="off new">NEW</span><div class="pic"><img src="images/deal5.png" alt="Aged Basmati Rice"></div><h4>Aged Basmati Rice</h4><small>10 kg</small><p class="price">$17.99</p><button><span>Add to Cart</span><img src="images/addcart.png" alt=""></button></div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section class="container">
+  <div class="panel why">
+    <h2><img src="images/leaf-l.png" alt="">Why Choose FreshMart?<img src="images/leaf-r.png" alt=""></h2>
+    <div class="why-grid">
+      <div><img src="images/why1.png" alt=""><p><b>Best Quality</b><small>Only the freshest &amp;<br>finest products.</small></p></div>
+      <div><img src="images/why2.png" alt=""><p><b>Affordable Prices</b><small>Best deals for your<br>family budget.</small></p></div>
+      <div><img src="images/why3.png" alt=""><p><b>Fast Delivery</b><small>Lightning fast delivery<br>at your doorstep.</small></p></div>
+      <div><img src="images/why4.png" alt=""><p><b>100% Secure</b><small>Your payments and data are always safe.</small></p></div>
+      <div><img src="images/why5.png" alt=""><p><b>Easy Returns</b><small>Hassle-free returns<br>within 7 days.</small></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT US -->
+<section class="container" id="about">
+  <div class="panel about">
+    <div class="about-text">
+      <h2><img src="images/leaf.png" alt="">About FreshMart</h2>
+      <p>FreshMart is your one-stop neighbourhood grocery store. We source fruits, vegetables, dairy and everyday essentials straight from trusted local farms and deliver them to your doorstep, fresh and on time.</p>
+      <p>From our first small shop on Organic Street to serving over 50,000 happy families, our promise has stayed the same: quality you can trust, prices that fit your budget and service that feels personal.</p>
+      <div class="stats">
+        <div><b>50K+</b><span>Happy Customers</span></div>
+        <div><b>5,000+</b><span>Products</span></div>
+        <div><b>30 min</b><span>Fast Delivery</span></div>
+        <div><b>4.9/5</b><span>Average Rating</span></div>
+      </div>
+    </div>
+    <img class="about-img" src="images/promo-veg.png" alt="Fresh vegetables">
+  </div>
+</section>
+
+<!-- RECIPES -->
+<section class="container" id="recipes">
+  <div class="section-head deal-head">
+    <h2><img src="images/leaf.png" alt="">Fresh Recipes</h2>
+    <a href="#recipes">View All Recipes <span>&rarr;</span></a>
+  </div>
+  <div class="recipe-grid">
+    <a href="#deals" class="recipe-card"><div class="rimg"><img src="images/cat1.png" alt=""></div><h4>Fresh Garden Salad</h4><small>15 min &bull; Easy &bull; Serves 2</small><p>Crisp greens, ripe peppers and tomatoes tossed with a light olive oil dressing.</p><span>View Recipe &rarr;</span></a>
+    <a href="#deals" class="recipe-card"><div class="rimg"><img src="images/cat5.png" alt=""></div><h4>Crunchy Breakfast Bowl</h4><small>10 min &bull; Easy &bull; Serves 1</small><p>Cereal, fresh milk and seasonal fruit for a quick and healthy start to the day.</p><span>View Recipe &rarr;</span></a>
+    <a href="#deals" class="recipe-card"><div class="rimg"><img src="images/cat6.png" alt=""></div><h4>Rustic Bread Platter</h4><small>20 min &bull; Medium &bull; Serves 4</small><p>Warm baked bread with cheese, nuts and fresh fruit, perfect for sharing.</p><span>View Recipe &rarr;</span></a>
+    <a href="#deals" class="recipe-card"><div class="rimg"><img src="images/deal2.png" alt=""></div><h4>Banana Milk Smoothie</h4><small>5 min &bull; Easy &bull; Serves 2</small><p>Ripe bananas blended with cold farm-fresh milk for a creamy, natural treat.</p><span>View Recipe &rarr;</span></a>
+  </div>
+</section>
+
+<!-- TESTIMONIAL / TRUST / SUBSCRIBE -->
+<section class="container triple">
+  <div class="box testimonial">
+    <h3>What Our Customers Say</h3>
+    <button class="arrow">&lsaquo;</button>
+    <p class="quote">&ldquo;FreshMart has made grocery shopping so easy and convenient. Fresh products, great quality and super fast delivery!&rdquo;</p>
+    <div class="t-foot"><b class="author">&ndash; Sarah J.</b><div class="dots"><i class="on"></i><i></i><i></i><i></i></div></div>
+  </div>
+  <div class="box trust">
+    <h3>Trusted by 50,000+ Happy Customers</h3>
+    <div class="trust-body">
+      <img src="images/avatars.png" alt="">
+      <div class="happy"><b>50K+</b><span>Happy Customers</span></div>
+    </div>
+    <div class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <b>4.9/5</b> <small>Average Rating</small></div>
+  </div>
+  <div class="box subscribe">
+    <h3>Get Exclusive Offers</h3>
+    <p>Subscribe to get the best deals &amp; fresh updates</p>
+    <form onsubmit="return false"><input type="email" placeholder="Enter your email"><button>Subscribe</button></form>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="container" id="contact">
+  <div class="panel contact">
+    <div class="contact-info">
+      <h2><img src="images/leaf.png" alt="">Contact Us</h2>
+      <p>Questions about an order or our products? We are happy to help.</p>
+      <ul>
+        <li><b>Address</b><span>789 Organic Street, Greenfield, NY 10001</span></li>
+        <li><b>Phone</b><a href="tel:+11234567890">(123) 456-7890</a></li>
+        <li><b>Email</b><a href="mailto:support@freshmart.com">support@freshmart.com</a></li>
+        <li><b>Hours</b><span>Mon - Sun: 8:00 AM - 10:00 PM</span></li>
+      </ul>
+    </div>
+    <form class="contact-form" onsubmit="return false">
+      <div class="row"><input type="text" placeholder="Your name"><input type="email" placeholder="Your email"></div>
+      <textarea rows="4" placeholder="How can we help you?"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="f-brand">
+      <a href="#home" class="logo light"><img class="logo-icon" src="images/footer-logo.png" alt=""><span class="logo-text"><b>FreshMart</b><small>Fresh. Healthy. Everyday.</small></span></a>
+      <p>Your one-stop shop for fresh groceries<br>and household essentials.</p>
+      <img class="foot-social" src="images/foot-social.png" alt="Social">
+    </div>
+    <div><h5>Quick Links</h5><a href="#home">Home</a><a href="#about">About Us</a><a href="#categories">Shop</a><a href="#deals">Deals</a><a href="#recipes">Recipes</a><a href="#contact">Contact Us</a></div>
+    <div><h5>Customer Service</h5><a href="#contact">My Account</a><a href="#contact">Order Tracking</a><a href="#deals">Wishlist</a><a href="#contact">Returns &amp; Refunds</a><a href="#contact">Shipping Policy</a><a href="#contact">FAQs</a></div>
+    <div><h5>Categories</h5><a href="#categories">Fruits &amp; Vegetables</a><a href="#categories">Dairy &amp; Eggs</a><a href="#categories">Beverages</a><a href="#categories">Snacks &amp; Munchies</a><a href="#categories">Household Essentials</a><a href="#categories">Personal Care</a></div>
+    <div><h5>Contact Us</h5>
+      <p class="ct"><i>&#9906;</i><span>789 Organic Street,<br>Greenfield, NY 10001</span></p>
+      <p class="ct"><i>&#9990;</i><span>(123) 456-7890</span></p>
+      <p class="ct"><i>&#9993;</i><span>support@freshmart.com</span></p>
+    </div>
+    <div class="accept"><h5>We Accept</h5><img src="images/pay.png" alt="Visa, Mastercard, Amex, PayPal, Apple Pay"></div>
+  </div>
+  <div class="copy">&copy; 2024 FreshMart. All Rights Reserved.</div>
+</footer>
+
+<script>
+(function(){
+  var links=document.querySelectorAll('.nav li a');
+  var map={'home':0,'categories':1,'deals':2,'new-arrivals':3,'about':4,'recipes':5,'contact':6};
+  function set(i){links.forEach(function(a,k){a.parentNode.classList.toggle('active',k===i)});}
+  links.forEach(function(a,k){a.addEventListener('click',function(){set(k)})});
+  if(!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&map[e.target.id]!==undefined)set(map[e.target.id])})},{rootMargin:'-40% 0px -55% 0px'});
+  Object.keys(map).forEach(function(id){var el=document.getElementById(id);if(el)io.observe(el)});
+})();
+</script>
+</body>
+</html>
+
+
